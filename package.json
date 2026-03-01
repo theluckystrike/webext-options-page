@@ -1,0 +1,42 @@
+{
+    "name": "webext-options-page",
+    "version": "0.1.0",
+    "description": "Pre-built options page framework for Chrome extensions — settings sections, theme support, import/export, search, validation, and responsive layout. Zero dependencies.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "options-page",
+        "settings",
+        "preferences",
+        "chrome-options",
+        "manifest-v3",
+        "browser-extension",
+        "options-ui",
+        "settings-page",
+        "configuration"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/webext-options-page.git"
+    },
+    "homepage": "https://github.com/theluckystrike/webext-options-page",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "test": "jest",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "@types/jest": "^29.5.12",
+        "typescript": "^5.3.3"
+    }
+}
