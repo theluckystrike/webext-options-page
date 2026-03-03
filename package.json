@@ -21,6 +21,9 @@
         "url": "https://github.com/theluckystrike/webext-options-page.git"
     },
     "homepage": "https://github.com/theluckystrike/webext-options-page",
+    "engines": {
+        "node": ">=20"
+    },
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "files": [
@@ -28,15 +31,16 @@
         "README.md",
         "LICENSE"
     ],
+    "type": "module",
     "scripts": {
         "build": "tsc",
         "dev": "tsc --watch",
-        "test": "jest",
+        "test": "vitest run",
         "prepublishOnly": "npm run build"
     },
     "devDependencies": {
         "@types/chrome": "^0.0.260",
-        "@types/jest": "^29.5.12",
-        "typescript": "^5.3.3"
+        "typescript": "^5.3.3",
+        "vitest": "^4.0.18"
     }
 }
